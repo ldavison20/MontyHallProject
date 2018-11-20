@@ -7,9 +7,11 @@ public class MontyHall
 	{
 		Scanner keyboard = new Scanner(System.in);
 		Random rand = new Random();
+		int rightDoor = rand.nextInt(3) + 1;
 		System.out.println("Choose a door you want to pick: ");
-		String door = keyboard.nextLine();
-		
+		int door = keyboard.nextInt();
+		System.out.println("The car was behind Door #" + rightDoor);
+		System.out.println("You chose Door #" + door);
 	}
 
 }
